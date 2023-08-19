@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="./assets/css/styles.css">
+</head>
+
+<body>
+
+    <!------------------------------- NavBar ----------------------------->
+    <div class="nav">
+        <h1>Library System</h1>
+        <div class="right">
+            <a href="#books-section">Books</a>
+            <a href="#register-section">Register</a>
+        </div>
+    </div>
+
+    <!------------------------------ Books Section ---------------------------->
+    
+    <section id="books-section" class="Books">
+        <div class="tabel-div">
+            <div class="book-heading">
+                <h2>Books</h2>
+            </div>
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th>Book ID</th>
+                        <th>Title</th>
+                        <th>Author</th>
+                        <th>Genre</th>
+                        <th>Availability</th>
+                    </tr>
+                </thead>
+                <!--------------------------- table row 1 ----------------------------->
+                <tr>
+                    <td>1</td>
+                    <td>
+                        <p id="book-title">Rich Dad Poor Dad</p>
+                        <table>
+                            <tr>
+                                <td>Publication Date: April 1997</td>
+                            </tr>
+                            <tr>
+                                <td>Page Count: 336</td>
+                            </tr>
+                            <tr>
+                                <td>ISBN: 0-446-67745-0</td>
+                            </tr>
+                        </table>
+                    </td>
+                    <td>Robert Kiyosaki, Sharon Lechter</td>
+                    <td>Personal finance</td>
+                    <td><span id = "available">Available</span></td>
+                </tr>
+                <!--------------------------- table row 2 ----------------------------->
+                <tr>
+                    <td>2</td>
+                    <td>
+                        <table>
+                            <p id="book-title">Think Like a Monk</p>
+                            <tr>
+                                <td>Publication Date: 8 September 2020</td>
+                            </tr>
+                            <tr>
+                                <td>Page Count: 352 pages</td>
+                            </tr>
+                            <tr>
+                                <td>ISBN: 1982134488</td>
+                            </tr>
+                        </table>
+                    </td>
+                    <td>Jay Shetty</td>
+                    <td>Self-help</td>
+                    <td><span id = "available">Available</span></td>
+                </tr>
+                <!--------------------------- table row 3 ----------------------------->
+                <tr>
+                    <td>3</td>
+                    <td>
+                        <p id="book-title">The Notebook</p>
+                        <table>
+                            <tr>
+                                <td>Publication Date: 1 October 1996</td>
+                            </tr>
+                            <tr>
+                                <td>Page Count: 214</td>
+                            </tr>
+                            <tr>
+                                <td>ISBN: 0-446-52080-2</td>
+                            </tr>
+                        </table>
+                    </td>
+                    <td>Nicholas Sparks</td>
+                    <td>Novel, Romance novel, Fiction</td>
+                    <td><span id = "available">Available</span></td>
+                </tr>
+                <!--------------------------- table row 4 ----------------------------->
+                <tr>
+                    <td>4</td>
+                    <td>
+                        <p id="book-title">Baaz</p>
+                        <table>
+                            <tr>
+                                <td>Publication Date: 15 April 2017</td>
+                            </tr>
+                            <tr>
+                                <td>Page Count: 436 pages</td>
+                            </tr>
+                            <tr>
+                                <td>ISBN: 9789352644124</td>
+                            </tr>
+                        </table>
+                    </td>
+                    <td>Anuja Chauhan</td>
+                    <td>War story</td>
+                    <td><span id = "out_of_stock">Out of Stock</span></td>
+                </tr>
+                <!--------------------------- table row 5 ----------------------------->
+                <tr>
+                    <td>5</td>
+                    <td>
+                        <p id="book-title">The Subtle Art of Not Giving a F*ck</p>
+                        <table>
+                            <tr>
+                                <td>Publication Date: 13 September 2016</td>
+                            </tr>
+                            <tr>
+                                <td>Page Count: 272</td>
+                            </tr>
+                            <tr>
+                                <td>ISBN: 978-0-06-245771-4</td>
+                            </tr>
+                        </table>
+                    </td>
+                    <td>Mark Manson</td>
+                    <td>Self-help</td>
+                    <td><span id = "available">Available</span></td>
+                </tr>
+            </table>
+            <button id="see-more-btn">See More</button>
+        </div>
+    </section>
+
+<!-------------------------------------------------  Register section  ------------------------------------------------------------->
+
+    <section id="register-section" class="Register">
+        <div class="register-div">
+            <div class="register-heading">
+                <h2>Register</h2>
+            </div>
+            <div class="form">
+                <form action="#" method="post">
+                    <label for="first-name">First Name:<span class="required-span">*</span></label><br>
+                    <input type="text" id="first-name" placeholder="e.g. Virat" required><br>
+
+                    <label for="last-name">Last Name:<span class="required-span">*</span></label><br>
+                    <input type="text" id="last-name" placeholder="e.g. Kohli" required><br>
+
+                    <label for="dob">Date Of Birth:<span class="required-span">*</span></label><br>
+                    <input type="date" id="dob" required><br>
+
+                    <label for="age">Age:<span class="required-span">*</span></label><br>
+                    <input type="number" id="age" min="5" max="100" placeholder="How Old Are You ?" required><br>
+
+                    <label for="email">Email:<span class="required-span">*</span></label><br>
+                    <input type="email" id="email" placeholder="e.g. example@gmail.com" required><br>
+
+                    <label for="password">Password:<span class="required-span">*</span></label><br>
+                    <input type="password" id="password" placeholder="Your Password" required><br>
+
+                    <label for="confirm_password">Confirm Password:<span class="required-span">*</span></label><br>
+                    <input type="password" id="confirm_password" placeholder="Your Password" required><br>
+
+                    <button id="register-btn" type="submit" class="pure-button pure-button-primary">Register</button>
+                </form>
+            </div>
+        </div>
+        <script>
+            var password = document.getElementById("password"),
+                confirm_password = document.getElementById("confirm_password");
+
+            function validatePassword() {
+                if (password.value != confirm_password.value) {
+                    confirm_password.setCustomValidity("Passwords Don't Match");
+                } else {
+                    confirm_password.setCustomValidity('');
+                }
+            }
+
+            password.onchange = validatePassword;
+            confirm_password.onkeyup = validatePassword;
+        </script>
+    </section>
+</body>
+
+</html>
